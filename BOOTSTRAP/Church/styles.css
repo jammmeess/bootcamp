@@ -1,0 +1,98 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+html,
+body,
+#pages {
+  margin: 0;
+  padding: 0;
+  font-family: "Comic Sans MS";
+}
+
+table {
+  background-color: rgb(70, 130, 180);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 25px;
+  font-size: 100%;
+}
+
+#banner {
+  text-align: center;
+}
+
+#title {
+  color: rgb(70, 130, 180);
+  font-size: 420%;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+#verse {
+  font-size: 100%;
+}
+
+#second_verse {
+  margin-top: 0%;
+}
+
+#huell {
+  padding-left: 20px;
+}
+
+#freehuell {
+  color: rgb(70, 130, 180);
+  font-size: 200%;
+  margin-top: 3px;
+  padding-left: 10px;
+}
+
+#ourhuell,
+#click {
+  font-size: 110%;
+  padding-left: 30px
+}
+
+#savehuell {
+  color: rgb(255, 0, 216);
+  font-size: 170%;
+  margin-top: 2%;
+  padding-left: 30px
+}
+
+#cross {
+  text-align: center;
+}
+
+#other_ministries {
+  font-size: 90%;
+}
+
+#contents {
+  list-style-position: inside;
+  list-style: disc;
+  text-align: center;
+  font-size: 80%;
+}
+
+#footer {
+  color: rgb(160, 160, 160);
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 0%;
+  font-size: 80%;
+}
+
+#links {
+  color: rgb(160, 160, 160);
+  margin-top: 0%;
+  font-size: 70%;
+}
+
+#disclaimer {
+  font-size: 70%;
+}

@@ -1,0 +1,81 @@
+#welcome {
+  text-align: left;
+  color: #dbdbdb;
+}
+
+#library {
+  font-size: 120%;
+}
+#game_on {
+  font-size: 420%;
+  font-weight: 80%;
+}
+#opening {
+  font-size: 140%;
+}
+
+#quoter {
+  font-size: 120%;
+  text-align: right;
+}
+
+#about {
+  color: #f1f1f1;
+}
+
+#first {
+  font-size: 170%;
+}
+
+.description {
+  color: white;
+  font-size: 120%;
+  line-height: 40px;
+  font-weight: lighter;
+}
+
+#courses {
+  color: white;
+  text-align: right;
+}
+
+.list {
+  list-style-type: none;
+  color: white;
+  text-align: center;
+  float: left;
+  font-weight: lighter;
+  font-size: 120%;
+  line-height: 30px;
+}
+
+#gallery {
+  color: white;
+  text-align: center;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 500px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+#how_it_works,
+#introducing,
+#perks {
+  color: #dbdbdb;
+}

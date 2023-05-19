@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <style>
+    label{display:block;}
+  </style>
+  <body>
+    <h1>Philippine Online Voting</h1>
+    <form>
+      <label for="first_name">First Name(Required):</label>
+      <input type="text" name="first_name" placeholder="ex. Juan" />
+      <label for="last_name">Last Name:</label>
+      <input type="text" name="last_name" placeholder="ex. De La Cruz" />
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="ex. juan_delacruz@gmail.com" />
+      <label for="date">Birthday</label>
+      <input type="date" />
+      <label for="number">Phone Number</label>
+      <input type="number" />
+      <label for="province">Provinces</label>
+      <select name="province" id="province">
+        <option>Please Select One...</option>
+        <option value="Benguet">Benguet</option>
+        <option value="Metro Manila">Metro Manila</option>
+        <option value="Capiz">Capiz</option>
+        <option value="Zamboanga del Sur">Zamboanga del Sur</option>
+      </select>
+      <label for="password">Password:</label>
+      <p>at least 8 characters, must include capital letter.</p>
+      <input type="password" name="password" />
+      <label for="con_password">Confirm Password:</p>
+      <input type="password" name="password" />
+      <label for="profile_pic">Upload Profile Picture</label>
+      <input type="file" name="prof_pic" accept="image/">
+      <label for="comments">Comments and Suggestions:</label>
+      <textarea style="width: 400px" placeholder="Help us improve our services by providing us suggestions."></textarea>
+      <h2>Senator</h2>
+      <input type="checkbox" name="bong_revilla">Bong Revilla <br />
+      <input type="checkbox" name="allan_cayetano"> Allan Cayetano <br />
+      <input type="checkbox" name="Raffy Tulfo" checked="true"> Raffy Tulfo <br />
+      <input type="checkbox" name="riza_hontiveros"> Riza Hontiveros <br />
+      <input type="checkbox" name="robin_padilla"> Robin Padilla <br />
+      <h2>Presidents</h2>
+      <input type="radio" name="presidents" value="bong_marcos">Ferdinand Marcos Jr.<br />
+      <input type="radio" name="presidents" value="leni_robredo" checked="true">Leni Robredo<br />
+      <input type="radio" name="presidents" value="isko_moreno">Isko Moreno<br />
+      <input type="submit" value="Submit Vote" />
+    </form>
+  </body>
+</html>
