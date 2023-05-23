@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/page_icon.png" />
+    <link rel="stylesheet" href="library.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Playstation Games</title>
+  </head>
+  <body style="background-color: rgb(36, 35, 35); font-family: monospace">
+    <!-- Navigation Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="library.html"
+          ><img src="img/logo.png" width="160px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!-- Back Home Nav -->
+            <li class="nav-item">
+              <a class="nav-link" href="library.html"
+                ><img src="img/arrow.png" width="40px" /> Go Back Home</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div>
+      <div class="container-fluid">
+        <div
+          id="playstation_games"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="4500"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#playstation_games"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#playstation_games"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#playstation_games"
+              data-bs-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#playstation_games"
+              data-bs-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#playstation_games"
+              data-bs-slide-to="4"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/playstation/ghost.jpg"
+                class="d-block w-100"
+                alt="Ghost of Tsushima"
+              />
+              <div class="carousel-caption d-none d-sm-block">
+                <h5>Ghost of Tsushima</h5>
+                <p>
+                  Forge a new path and wage an unconventional war for the
+                  freedom of Tsushima. Challenge opponents with your katana,
+                  master the bow to eliminate distant threats, develop stealth
+                  tactics to ambush enemies and explore a new story on Iki
+                  Island.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/playstation/god_of_war.jpg"
+                class="d-block w-100"
+                alt="God of War: Ragnarok"
+              />
+              <div class="carousel-caption d-none d-sm-block">
+                <h5>God of War: Ragnarok</h5>
+                <p>
+                  Embark on an epic and heartfelt journey as Kratos and Atreus
+                  struggle with holding on and letting go
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/playstation/hogwarts.jpg"
+                class="d-block w-100"
+                alt="Hogwarts Legacy"
+              />
+              <div class="carousel-caption d-none d-sm-block">
+                <h5>Hogwarts Legacy</h5>
+                <p>
+                  Hogwarts Legacy is an immersive, open-world action RPG set in
+                  the world first introduced in the Harry Potter books. Embark
+                  on a journey through familiar and new locations as you explore
+                  and discover magical beasts, customise your character and
+                  craft potions, master spell casting, upgrade talents and
+                  become the wizard you want to be.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/playstation/the_last_of_us_II.jpg"
+                class="d-block w-100"
+                alt="The Last of Us Part II"
+              />
+              <div class="carousel-caption d-none d-sm-block">
+                <h5>The Last of Us Part II</h5>
+                <p>
+                  Five years after their dangerous journey across the
+                  post-pandemic United States, Ellie and Joel have settled down
+                  in Jackson, Wyoming. Living amongst a thriving community of
+                  survivors has allowed them peace and stability, despite the
+                  constant threat of the infected and other, more desperate
+                  survivors.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/playstation/Stray.jpg"
+                class="d-block w-100"
+                alt="Stray"
+              />
+              <div class="carousel-caption d-none d-sm-block">
+                <h5>Stray</h5>
+                <p>
+                  Stray is a third-person cat adventure game set amidst the
+                  detailed neon-lit alleys of a decaying cybercity and the murky
+                  environments of its seedy underbelly. See the world through
+                  the eyes of a stray and interact with the environment in
+                  playful ways.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#playstation_games"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#playstation_games"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/Ghost_of_Tsushima.jpg"
+              class="card-img-top"
+              alt="Ghost of Tsushima"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ghost of Tsushima</h5>
+              <p class="card-text">
+                Forge a new path and wage an unconventional war for the freedom
+                of Tsushima. Challenge opponents with your katana, master the
+                bow to eliminate distant threats, develop stealth tactics to
+                ambush enemies and explore a new story on Iki Island.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/god_of_war.jpg"
+              class="card-img-top"
+              alt="God of War:Ragnarok"
+            />
+            <div class="card-body">
+              <h5 class="card-title">God of War:Ragnarok</h5>
+              <p class="card-text">
+                Embark on an epic and heartfelt journey as Kratos and Atreus
+                struggle with holding on and letting go
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/tlou_ii.png"
+              class="card-img-top"
+              alt="The Last of Us Part II"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Last of Us Part II</h5>
+              <p class="card-text">
+                Five years after their dangerous journey across the
+                post-pandemic United States, Ellie and Joel have settled down in
+                Jackson, Wyoming. Living amongst a thriving community of
+                survivors has allowed them peace and stability, despite the
+                constant threat of the infected and other, more desperate
+                survivors.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/stray.jpg"
+              class="card-img-top"
+              alt="Stray"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Stray</h5>
+              <p class="card-text">
+                Stray is a third-person cat adventure game set amidst the
+                detailed neon-lit alleys of a decaying cybercity and the murky
+                environments of its seedy underbelly. See the world through the
+                eyes of a stray and interact with the environment in playful
+                ways.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/hogwarts.jpg"
+              class="card-img-top"
+              alt="Hogwarts Legacy"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Hogwarts Legacy</h5>
+              <p class="card-text">
+                Hogwarts Legacy is an immersive, open-world action RPG set in
+                the world first introduced in the Harry Potter books. Embark on
+                a journey through familiar and new locations as you explore and
+                discover magical beasts, customise your character and craft
+                potions, master spell casting, upgrade talents and become the
+                wizard you want to be.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/Grand_Theft_Auto_V.png"
+              class="card-img-top"
+              alt="Grand Theft Auto V"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Grand Theft Auto V</h5>
+              <p class="card-text">
+                Welcome to Los Santos Experience blockbuster hits Grand Theft
+                Auto V and GTA Online.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/spider_man.jpg"
+              class="card-img-top"
+              alt="Marvel's Spider-Man"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Marvel's Spider-Man</h5>
+              <p class="card-text">
+                This isn't the Spider-Man you've met or ever seen before. In
+                Marvel's Spider-Man, we meet an experienced Peter Parker who's
+                more masterful at fighting big crime in New York City. At the
+                same time, he's struggling to balance his chaotic personal life
+                and career while the fate of Marvel's New York rests upon his
+                shoulders.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/re4.jpg"
+              class="card-img-top"
+              alt="Resident Evil 4 Remake"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Resident Evil 4 Remake</h5>
+              <p class="card-text">
+                Resident Evil 4, 2005's legendary survival horror, is brought
+                fully up-to-date in this ground-up remake. Six years after the
+                events of Resident Evil 2, Raccoon City survivor Leon Kennedy
+                has been dispatched to a secluded European village to
+                investigate the disappearance of the US president's daughter.
+                What he discovers there is unlike anything he has faced before.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/rdr_II.jpg"
+              class="card-img-top"
+              alt="Red Dead Redemption II"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Red Dead Redemption II</h5>
+              <p class="card-text">
+                America, 1899. The end of the wild west era has begun as lawmen
+                hunt down the last remaining outlaw gangs. Those who will not
+                surrender or succumb are killed.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/Death_Stranding.jpg"
+              class="card-img-top"
+              alt="Death Stranding"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Death Stranding</h5>
+              <p class="card-text">
+                In the near future, mysterious explosions have rocked the globe,
+                setting off a series of supernatural events known as the Death
+                Stranding. With otherworldly creatures plaguing the landscape,
+                and mass extinction imminent, it's up to Sam Porter Bridges to
+                travel across the ravaged wasteland and save humanity from
+                impending annihilation.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/Days_Gone.jpg"
+              class="card-img-top"
+              alt="Days Gone"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Days Gone</h5>
+              <p class="card-text">
+                Step into the dirt flecked shoes of former outlaw biker Deacon
+                St. John, a bounty hunter trying to find a reason to live in a
+                land surrounded by death. Scavenge through abandoned settlements
+                for equipment to craft valuable items and weapons, or take your
+                chances with other survivors trying to eke out a living through
+                fair trade… or more violent means.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/playstation/games/Horizon_Forbidden_West.jpg"
+              class="card-img-top"
+              alt="Horizon: The Forbidden West"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Horizon: The Forbidden West</h5>
+              <p class="card-text">
+                Explore distant lands, fight bigger and more awe-inspiring
+                machines, and encounter astonishing new tribes as you return to
+                the far-future, post-apocalyptic world of Horizon.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <div class="container-fluid" style="background-color: rgb(20, 19, 19)">
+    <footer>
+      <div class="footer-content pt-4 text-light">
+        <h3>Library</h3>
+        <p>
+          Library is a gaming website where you will be able to rent from old
+          games to the latest releases. Here you can freely play any game we
+          have without breaking the bank.
+        </p>
+        <ul class="”socials”">
+          <th>
+            <a href="https://www.facebok.com"
+              ><img src="img/facebook_footer.png" width="30px"
+            /></a>
+          </th>
+          <th>
+            <a href="https://www.twitter.com"
+              ><img src="img/twitter_footer.png" width="30px"
+            /></a>
+          </th>
+          <th>
+            <a href="https://www.instagram.com"
+              ><img src="img/instagram_footer.png" width="30px"
+            /></a>
+          </th>
+        </ul>
+      </div>
+      <div class="footer-bottom text-light">
+        <p>copyright &copy;2023 <a href="”library.html”">Library</a></p>
+      </div>
+    </footer>
+  </div>
+</html>

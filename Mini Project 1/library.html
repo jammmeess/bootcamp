@@ -15,11 +15,12 @@
 
     <title>Library</title>
   </head>
-  <body style="background-color: rgb(36, 35, 35)">
+  <body style="background-color: rgb(36, 35, 35); font-family: monospace">
+    <!-- Navigation Start -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#welcome"
-          ><img src="img/logo.png" width="160px"
+          ><img src="img/logo.png" width="160px" alt="library logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -31,12 +32,15 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!-- About Us Nav -->
             <li class="nav-item">
               <a class="nav-link" href="#aboutus">ABOUT US</a>
             </li>
+            <!-- How it Works Nav -->
             <li class="nav-item">
               <a class="nav-link" href="#how_it_works">HOW IT WORKS</a>
             </li>
+            <!-- Games Nav -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -48,74 +52,186 @@
                 GAMES
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">NINTENDO SWITCH</a></li>
-                <li><a class="dropdown-item" href="#">PLAYSTATION</a></li>
-                <li><a class="dropdown-item" href="#">XBOX</a></li>
+                <li>
+                  <a class="dropdown-item" href="nintendo_games.html"
+                    >NINTENDO SWITCH</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="playstation_games.html"
+                    >PLAYSTATION</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="xbox_games.html">XBOX</a>
+                </li>
               </ul>
             </li>
+            <!-- Faqs Nav -->
             <li class="nav-item">
               <a class="nav-link" href="#faqs">FAQS</a>
             </li>
+            <!-- Contact Us Nav -->
             <li class="nav-item">
-              <a class="nav-link" href="#register">REGISTER</a>
+              <a class="nav-link" href="#contact_us">CONTACT US</a>
             </li>
+            <!-- Membership Nav -->
             <li class="nav-item">
-              <a class="nav-link" href="#signin">SIGN IN</a>
+              <a class="nav-link" href="membership.html">MEMBERSHIP</a>
             </li>
+            <!-- Register Nav -->
             <li class="nav-item">
-              <a class="nav-link" href="#membership">MEMBERSHIP</a>
+              <a class="nav-link" href="registration_page.html">REGISTER</a>
             </li>
+            <!-- Sign In Nav -->
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-toggle="modal"
+              data-bs-target="#sign_in"
+            >
+              Sign In
+            </button>
+            <div class="modal fade" id="sign_in" tabindex="-1">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="welcome_back">Welcome Back!</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <label for="enter_email">Username/Email address</label>
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="enter_email"
+                          aria-describedby="emailHelp"
+                          placeholder="Please enter your username or email"
+                        />
+                      </div>
+                      <div class="form-group pt-3">
+                        <label for="password">Password</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          placeholder="Please enter your password"
+                        />
+                      </div>
+                      <div class="form-check pt-3">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="keep_signed_in"
+                        />
+                        <label class="form-check-label" for="keep_signed_in"
+                          >Keep Me Signed In</label
+                        >
+                      </div>
+                      <div class="row pt-3">
+                        <p><a href="forgot_pw.html">Forgot Password?</a></p>
+                      </div>
+                      <div class="row">
+                        <p>
+                          Don't have an account yet?<a href="membership.html"
+                            ><span> Register Here</span></a
+                          >
+                        </p>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-light"
+                      data-bs-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button type="button" class="btn btn-secondary">
+                      Sign In!
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- Welcome Banner -->
     <div class="container">
-      <div class="row row d-flex justify-content-end align-items-center">
+      <div class="row d-flex justify-content-end align-items-center">
         <div class="col-lg-8 col-12">
-          <img src="img/Banner.png" class="img-fluid py-5 my-5" />
+          <img
+            src="img/Banner.png"
+            class="img-fluid py-5 my-5"
+            alt=" A photo of Master Chief, Kratos, Link, Star-lord, and Marcus Holloway"
+            style="color: white"
+          />
         </div>
-        <div class="col-lg-4 col-12 px-4" id="welcome">
+        <div class="col-lg-4 col-12 mt-4 px-4" id="welcome">
           <h5 class="display-5" id="library">Welcome to Library!</h5>
           <h1 class="display-1" id="game_on">LET'S GAME ON!</h1>
           <h3 class="display-3" id="opening">
             Enjoy your access to a multiple variety of games available for rent!
           </h3>
-          <a type="button" class="btn btn-secondary" href="#how_it_works">
+          <a type="button" class="btn btn-secondary my-5" href="#how_it_works">
             Learn More...
           </a>
         </div>
       </div>
     </div>
 
+    <!-- About Us -->
     <div style="background-color: white">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 col-12 py-5 px-5">
+          <div class="col-lg-6 col-12 pt-5 px-5">
             <h1 class="display-1 py-4" id="aboutus">About Us</h1>
-            <h4 class="display-6 py-4">
-              At Library, We dream that each and every gamer have access to a
-              multiple variety of games!
+            <h4 class="display-6 py-4 text-strong">
+              At Library, we dream that each and every gamer has access to a
+              multiple variety of games.
             </h4>
-            <h5>
-              Gaming has certainly evolved in the past few years and the more
-              technology that is used to develop them the more expensive they
-              get.
+            <h5 style="font-weight: lighter; line-height: 30px">
+              Gaming has certainly evolved in the past few years, and the more
+              technology is being used to develop them the more expensive they
+              become. Due to the high prices of games upon their release, more
+              gamers become hesitant to purchase or play games.
             </h5>
-            <h5>
-              Due to the high price of games upon release, more gamers aren't
-              able to buy games, They don't want to spend because maybe they
-              don't know if they would like that type of game, or maybe it's
-              just a buggy mess.
+            <h5 style="font-weight: lighter; line-height: 30px">
+              On top of that, gamers will not know that a game is a buggy mess
+              until they buy it. Having said that, Library is here to offer the
+              joy of playing video games without having to spend hefty amount of
+              money.
             </h5>
           </div>
-          <div class="col-lg-6 d-none d-sm-block">
-            <img src="img/about.png" class="img-fluid my-5" />
+          <div class="col-lg-6 pt-5 d-none d-sm-block">
+            <img
+              src="img/about.png"
+              class="img-fluid my-5"
+              alt="V from Cyberpunk 2077"
+            />
+          </div>
+          <div class="col-lg-6 col-12 d-block d-sm-none">
+            <img
+              src="img/about.png"
+              class="img-fluid my-5"
+              alt="V from Cyberpunk 2077"
+            />
           </div>
         </div>
       </div>
     </div>
 
+    <!-- How it works -->
     <div style="background-color: rgb(36, 35, 35)">
       <div class="container">
         <div class="row">
@@ -125,7 +241,12 @@
 
           <div class="row d-flex justify-content-start align-items-center">
             <div class="col-lg-5 d-none d-sm-block">
-              <img src="img/librarycard.png" class="img-fluid" />
+              <img
+                src="img/librarycard.png"
+                class="img-fluid"
+                alt="photo of our premium and standard library card"
+                style="color: white"
+              />
             </div>
 
             <div class="col-lg-6 col-12 text-center">
@@ -139,11 +260,15 @@
             </div>
 
             <div class="col-lg-12 col-12 text-light text-center">
-              <h4 id="perks" class="lead">
-                You can choose between a Premium Membership and a Standard
+              <h4 class="lead">
+                You can choose between Premium Membership and Standard
                 Membership each with it's own benefits and perks!
               </h4>
-              <a type="button" class="btn btn-secondary mb-5" href="#">
+              <a
+                type="button"
+                class="btn btn-secondary mb-5"
+                href="membership.html"
+              >
                 Subscribe Now
               </a>
             </div>
@@ -152,23 +277,314 @@
       </div>
     </div>
 
+    <!-- Check out our games -->
     <div style="background-color: white">
       <div class="col-lg-12 col-12 py-5">
         <h1 id="games" class="display-1 text text-center">
           Checkout Our Games!
         </h1>
       </div>
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-3 ms-5 align-items-center">
-          <img src="img/nintendo.png" width="200px" class="img-fluid" />
+
+      <!-- Larger Screen -->
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg-3 d-flex justify-content-center align-items-center d-none d-sm-block offset-2 pb-5"
+          >
+            <a href="nintendo_games.html"
+              ><img
+                src="img/nintendo.png"
+                width="200px"
+                class="img-fluid"
+                alt="Nintendo Logo"
+            /></a>
+          </div>
+          <div
+            class="col-lg-3 d-flex justify-content-center align-items-center d-none d-sm-block pb-5"
+          >
+            <a href="playstation_games.html"
+              ><img
+                src="img/playstation.png"
+                width="150px"
+                class="img-fluid"
+                alt="Playstation Logo"
+            /></a>
+          </div>
+          <div
+            class="col-lg-3 d-flex justify-content-center align-items-center d-none d-sm-block pb-5"
+          >
+            <a href="xbox_games.html"
+              ><img
+                src="img/xbox.png"
+                width="95px"
+                class="img-fluid"
+                alt="Xbox Logo"
+            /></a>
+          </div>
         </div>
-        <div class="col-lg-3">
-          <img src="img/playstation.png" width="200px" class="img-fluid" />
+
+        <!-- Smaller Screen -->
+        <div class="row">
+          <div
+            class="col-12 d-flex justify-content-center align-items-center d-block d-sm-none pb-4"
+          >
+            <a href="nintendo_games.html"
+              ><img src="img/nintendo.png" width="200px" class="img-fluid"
+            /></a>
+          </div>
+          <div
+            class="col-12 d-flex justify-content-center align-items-center d-block d-sm-none pb-5"
+          >
+            <a href="playstation_games.html"
+              ><img src="img/playstation.png" width="150px" class="img-fluid"
+            /></a>
+          </div>
+          <div
+            class="col-12 d-flex justify-content-center align-items-center d-block d-sm-none pb-5"
+          >
+            <a href="xbox_games.html"
+              ><img src="img/xbox.png" width="80px" class="img-fluid"
+            /></a>
+          </div>
         </div>
-        <div class="col-lg-3">
-          <img src="img/xbox.png" width="100px" class="img-fluid" />
+      </div>
+    </div>
+
+    <!-- Faqs -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 col-12 py-5">
+          <h1 id="faqs" class="display-1 text-end text-light">
+            Frequently Asked Questions
+          </h1>
+        </div>
+        <div class="col-lg-12 col-12 pb-5">
+          <div class="accordion" id="frequent_questions">
+            <!-- First Accordion -->
+            <div class="accordion-item">
+              <h2 class="accordion-header text-strong" id="library_about">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                >
+                  What is Library all about?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#library_about"
+              >
+                <div class="accordion-body">
+                  Library offers a wide variety of games for rent for consoles
+                  such as the Nintendo Switch, Ps5 and Xbox Series X.
+                </div>
+              </div>
+            </div>
+
+            <!-- Second Accordion -->
+            <div class="accordion-item">
+              <h2 class="accordion-header text-strong" id="location_question">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                >
+                  Where are you Located?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#location_question"
+              >
+                <div class="accordion-body">
+                  We are currently based in Better-Living, Paranaque City. We
+                  are currently planning to expand our operations to cover the
+                  whole Metro Manila, and soon the whole country.
+                </div>
+              </div>
+            </div>
+
+            <!-- Third Accordion -->
+            <div class="accordion-item">
+              <h2 class="accordion-header text-strong" id="explanation ">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                >
+                  How does this work?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#explanation"
+              >
+                <div class="accordion-body">
+                  We have multiple games for rent. First you have to register
+                  and pick a plan between Non-Member, Standard, and Premium
+                  Membership. After registering, you can choose the games you
+                  want to rent, the number of games you can borrow. The time of
+                  delivery varies on what membership you are in.
+                </div>
+              </div>
+            </div>
+
+            <!-- Fourth Accordion -->
+            <div class="accordion-item">
+              <h2 class="accordion-header text-strong" id="membership_details">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                >
+                  What are the types of membership you have and what are their
+                  perks and benefits?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#membership_details"
+              >
+                <div class="accordion-body">
+                  We have three types of membership. Non-Member, Standard
+                  Membership, and Premium Membership. For more info kindly check
+                  our <a href="#">Membership</a> page.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Us -->
+    <div class="container-fluid" style="background-color: white">
+      <h1 id="contact_us" class="col-lg-12 col-12 pt-5 text-center display-1">
+        Contact Us!
+      </h1>
+      <h5 class="text-lead text-center display-6">
+        Please feel free to contact us if you need any further information on
+        Library.
+      </h5>
+      <div class="row d-flex justify-content-start align-items-center">
+        <div class="col-lg-6 col-12 d-none d-sm-block">
+          <img
+            src="img/contact_us.png"
+            class="img-fluid"
+            alt="Trevor, Franklin and Michael from GTA V"
+          />
+        </div>
+        <div class="col-lg-6 col-12 d-block d-sm-none">
+          <img
+            src="img/contact_us.png"
+            class="img-fluid"
+            alt="Trevor, Franklin and Michael from GTA V"
+          />
+        </div>
+        <div class="col-lg-5 col-12 mt-5 pt-5">
+          <form>
+            <div class="form-group pt-3 row">
+              <label for="enter_name" class="col-sm-2 col-form-label"
+                ><b>Name:</b></label
+              >
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="enter_name" />
+              </div>
+            </div>
+
+            <div class="form-group pt-3 row">
+              <label for="contact_number" class="col-sm-2 col-form-label"
+                ><b>Contact Number:</b></label
+              >
+              <div class="col-sm-10">
+                <input type="Number" class="form-control" id="contact_number" />
+              </div>
+            </div>
+
+            <div class="form-group pt-3 row">
+              <label for="message" class="col-sm-2 col-form-label"
+                ><b>Message:</b></label
+              >
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="message" />
+              </div>
+            </div>
+
+            <div class="row">
+              <p class="pt-5"><b>Contact:</b></p>
+              <span><b>inquire_library@gmail.com | +6391234567890</b></span>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4 col-2 me-5">
+                <button type="button" class="btn btn-secondary my-5">
+                  Contact Us!
+                </button>
+              </div>
+
+              <div class="col-lg-2 col-2 my-5">
+                <a href="https://www.facebook.com"
+                  ><img src="img/facebook.png" class="img-fluid" width="30px"
+                /></a>
+              </div>
+
+              <div class="col-lg-2 col-2 my-5">
+                <a href="https://twitter.com/home"
+                  ><img src="img/twitter.png" class="img-fluid" width="30px"
+                /></a>
+              </div>
+
+              <div class="col-lg-2 col-2 my-5">
+                <a href="https://www.instagram.com"
+                  ><img src="img/instagram.png" class="img-fluid" width="30px"
+                /></a>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
   </body>
+
+  <div class="container-fluid" style="background-color: rgb(20, 19, 19)">
+    <footer>
+      <div class="footer-content pt-4 text-light">
+        <h3>Library</h3>
+        <p>
+          Library is a gaming website where you will be able to rent from old
+          games to the latest releases. Here you can freely play any game we
+          have without breaking the bank.
+        </p>
+        <ul class="”socials”">
+          <th>
+            <a href="https://www.facebok.com"
+              ><img src="img/facebook_footer.png" width="30px"
+            /></a>
+          </th>
+          <th>
+            <a href="https://www.twitter.com"
+              ><img src="img/twitter_footer.png" width="30px"
+            /></a>
+          </th>
+          <th>
+            <a href="https://www.instagram.com"
+              ><img src="img/instagram_footer.png" width="30px"
+            /></a>
+          </th>
+        </ul>
+      </div>
+      <div class="footer-bottom text-light">
+        <p>copyright &copy;2023 <a href="library.html">Library</a></p>
+      </div>
+    </footer>
+  </div>
 </html>

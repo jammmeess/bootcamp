@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/page_icon.png" />
+    <link rel="stylesheet" href="library.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Nintendo Games</title>
+  </head>
+  <body style="background-color: rgb(36, 35, 35); font-family: monospace">
+    <!-- Navigation Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="library.html"
+          ><img src="img/logo.png" width="160px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!-- Back Home Nav -->
+            <li class="nav-item">
+              <a class="nav-link" href="library.html"
+                ><img src="img/arrow.png" width="40px" /> Go Back Home</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Carousel -->
+    <div>
+      <div class="container-fluid">
+        <div
+          id="nintendo_games"
+          class="carousel slide"
+          data-bs-ride="carousel"
+          data-bs-interval="4500"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#nintendo_games"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#nintendo_games"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#nintendo_games"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="img/nintendo/botw.jpg"
+                class="d-block w-100"
+                alt="The Legend of Zelda: Breath of the Wild"
+              />
+              <div class="carousel-caption d-none d-sm-block">
+                <h5>The Legend of Zelda: Breath of the Wild</h5>
+                <p>
+                  Forget everything you know about The Legend of Zelda games.
+                  Step into a world of discovery, exploration, and adventure in
+                  The Legend of Zelda: Breath of the Wild, a boundary-breaking
+                  new game in the acclaimed series.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/nintendo/mario.jpg"
+                class="d-block w-100"
+                alt="Super Mario Oddyssey"
+              />
+              <div class="carousel-caption d-none d-sm-block">
+                <h5>Super Mario Oddyssey</h5>
+                <p>
+                  Explore incredible places far from the Mushroom Kingdom as you
+                  join Mario and his new ally Cappy on a massive, globe-trotting
+                  3D adventure. Use amazing new abilities—like the power to
+                  capture and control objects, animals, and enemies—to collect
+                  Power Moons so you can power up the Odyssey airship and save
+                  Princess Peach from Bowser's wedding plans!
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="img/nintendo/scarlet_violet.jpg"
+                class="d-block w-100"
+                alt="Pokemon Scarlet and Violet"
+              />
+              <div class="carousel-caption d-none d-sm-block">
+                <h5>Pokemon Scarlet / Violet</h5>
+                <p>
+                  Welcome to the wide-open world of the Paldea region Catch,
+                  battle, and train Pokémon in the Paldea Region, a vast land
+                  filled with lakes, towering peaks, wastelands, small towns,
+                  and sprawling cities.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#nintendo_games"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#nintendo_games"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/nintendo/games/animalcrossing.jpg"
+              class="card-img-top"
+              alt="Animal Crossing: New Horizon"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Animal Crossing: New Horizons</h5>
+              <p class="card-text">
+                Escape to a deserted island and create your own paradise as you
+                explore, create, and customize in the Animal Crossing: New
+                Horizons game.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/nintendo/games/crash_four.jpg"
+              class="card-img-top"
+              alt="Crash Bandicoot 4 It's About Time"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Crash Bandicoot 4 It's About Time</h5>
+              <p class="card-text">
+                It's About Time - for a brand-wumping new Crash Bandicoot™ game!
+                Crash fourward into a time shattered adventure with your
+                favorite marsupials.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/nintendo/games/mariooddyssey.jpg"
+              class="card-img-top"
+              alt="Super Mario Oddyssey"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Super Mario Oddyssey</h5>
+              <p class="card-text">
+                Explore incredible places far from the Mushroom Kingdom as you
+                join Mario and his new ally Cappy on a massive, globe-trotting
+                3D adventure.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/nintendo/games/minecraft.jpg"
+              class="card-img-top"
+              alt="Minecraft Dungeons"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Minecraft Dungeons</h5>
+              <p class="card-text">
+                Fight your way through an all-new action-adventure game,
+                inspired by classic dungeon crawlers and set in the Minecraft
+                universe!
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/nintendo/games/persona_five.jpg"
+              class="card-img-top"
+              alt="Persona Five Royal"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Persona Five Royal</h5>
+              <p class="card-text">
+                Prepare for the award-winning RPG experience in this definitive
+                edition of Persona 5 Royal, featuring a treasure trove of
+                downloadable content included!
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/nintendo/games/pokemonscarlet.jpg"
+              class="card-img-top"
+              alt="Pokemon: Scarlet"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pokemon: Scarlet</h5>
+              <p class="card-text">
+                Catch, battle, and train Pokémon in the Paldea Region, a vast
+                land filled with lakes, towering peaks, wastelands, small towns,
+                and sprawling cities.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/nintendo/games/pokemonviolet.jpg"
+              class="card-img-top"
+              alt="Pokemon: Violet"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Pokemon: Violet</h5>
+              <p class="card-text">
+                Catch, battle, and train Pokémon in the Paldea Region, a vast
+                land filled with lakes, towering peaks, wastelands, small towns,
+                and sprawling cities.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/nintendo/games/sonic.jpg"
+              class="card-img-top"
+              alt="Sonic Frontiers"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sonic Frontiers</h5>
+              <p class="card-text">
+                Worlds are colliding in Sonic the Hedgehog's newest high-speed
+                adventure! In search of the missing Chaos emeralds, Sonic
+                becomes stranded on an ancient island teeming with unusual
+                creatures.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/nintendo/games/witcher.jpg"
+              class="card-img-top"
+              alt="The Witcher III: Wildhunt"
+            />
+            <div class="card-body">
+              <h5 class="card-title">The Witcher III: Wildhunt</h5>
+              <p class="card-text">
+                A WHOLE WORLD TO EXPLORE. AT HOME AND ON THE GO. Winner of over
+                250 Game of the Year awards, The Witcher 3: Wild Hunt is a
+                story-driven, open world adventure set in a dark fantasy
+                universe.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 py-5 d-flex align-items-stretch">
+          <div class="card">
+            <img
+              src="img/nintendo/games/zeldabotw.jpg"
+              class="card-img-top"
+              alt="The Legend of Zelda: Breath of the Wild"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                The Legend of Zelda: Breath of the Wild
+              </h5>
+              <p class="card-text">
+                Forget everything you know about The Legend of Zelda games. Step
+                into a world of discovery, exploration, and adventure in The
+                Legend of Zelda: Breath of the Wild, a boundary-breaking new
+                game in the acclaimed series.
+              </p>
+              <a href="#" class="btn btn-secondary">Rent Now</a>
+              <a href="#" class="btn btn-secondary"
+                ><img src="img/wishlist.png" width="20px"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <div class="container-fluid" style="background-color: rgb(20, 19, 19)">
+    <footer>
+      <div class="footer-content pt-4 text-light">
+        <h3>Library</h3>
+        <p>
+          Library is a gaming website where you will be able to rent from old
+          games to the latest releases. Here you can freely play any game we
+          have without breaking the bank.
+        </p>
+        <ul class="”socials”">
+          <th>
+            <a href="https://www.facebok.com"
+              ><img src="img/facebook_footer.png" width="30px"
+            /></a>
+          </th>
+          <th>
+            <a href="https://www.twitter.com"
+              ><img src="img/twitter_footer.png" width="30px"
+            /></a>
+          </th>
+          <th>
+            <a href="https://www.instagram.com"
+              ><img src="img/instagram_footer.png" width="30px"
+            /></a>
+          </th>
+        </ul>
+      </div>
+      <div class="footer-bottom text-light">
+        <p>copyright &copy;2023 <a href="”library.html”">Library</a></p>
+      </div>
+    </footer>
+  </div>
+</html>

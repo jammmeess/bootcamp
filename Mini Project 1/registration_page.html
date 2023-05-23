@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/page_icon.png" />
+    <link rel="stylesheet" href="library.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Registration</title>
+  </head>
+  <body style="background-color: rgb(36, 35, 35); font-family: monospace">
+    <!-- Navigation Start -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light text-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="library.html"
+          ><img src="img/logo.png" width="160px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <!-- Back Home Nav -->
+            <li class="nav-item">
+              <a class="nav-link" href="library.html"
+                ><img src="img/arrow.png" width="40px" /> Go Back Home</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div
+        class="Row d-flex justify-content-start align-items-center text-dark"
+        style="line-height: 40px"
+      >
+        <div class="col-lg-6 col-12">
+          <h1 class="display-1 text-light">Registration</h1>
+          <h5 class="text-lead text-light">
+            You're one step closer to becoming a part of us!
+          </h5>
+        </div>
+
+        <div class="col-lg-6 px-3 py-5 d-none d-sm-block">
+          <img
+            src="img/Registration.png"
+            class="img-fluid"
+            alt="Vault Boy from the Fallout Series"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: white">
+      <div
+        class="Row d-flex justify-content-start align-items-start text-dark"
+        style="line-height: 40px"
+      >
+        <div class="col-lg-5 py-5 d-none d-sm-block">
+          <img
+            src="img/float_card.png"
+            class="img-fluid"
+            alt="floating library cardss"
+          />
+        </div>
+
+        <div class="col-lg-6 col-12 pt-5">
+          <form>
+            <div class="form-group row">
+              <label for="email" class="col-sm-2 col-form-label">Email:</label>
+              <div class="col-sm-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="ex. super_mario@gmail.com"
+                />
+              </div>
+            </div>
+
+            <div class="form-group pt-3 row">
+              <label for="enter_username" class="col-sm-2 col-form-label"
+                >Username:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="enter_username"
+                  placeholder="ex. Mario_85"
+                />
+              </div>
+            </div>
+
+            <div class="form-group pt-3 row">
+              <label for="enter_name" class="col-sm-2 col-form-label"
+                >First Name:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="enter_name"
+                  placeholder="ex. Mario"
+                />
+              </div>
+            </div>
+
+            <div class="form-group pt-3 row">
+              <label for="enter_lastname" class="col-sm-2 col-form-label"
+                >Last Name:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="enter_lastname"
+                  placeholder="ex. Gonzales"
+                />
+              </div>
+            </div>
+
+            <!-- Gender -->
+            <fieldset class="form-group pt-2">
+              <div class="row">
+                <label class="col-2">Gender:</label>
+                <div class="col-lg-8">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="Male"
+                      value="male"
+                      checked
+                    />
+                    <label class="form-check-label" for="gender"> Male </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="Female"
+                      value="female"
+                    />
+                    <label class="form-check-label" for="gender">
+                      Female
+                    </label>
+                  </div>
+                  <div class="form-check disabled">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="gender"
+                      id="Other"
+                      value="other"
+                    />
+                    <label class="form-check-label" for="gender"> Other </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <div class="form-group pt-3 row">
+              <label for="birthdate" class="col-sm-2 col-form-label"
+                >Birthday:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="date"
+                  class="form control"
+                  id="birthdate"
+                  placeholder=""
+                />
+              </div>
+            </div>
+
+            <div class="form-group pt-3 row">
+              <label for="contact_number" class="col-sm-2 col-form-label"
+                >Contact Number:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="contact_number"
+                  placeholder="ex. +6391234567890"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <hr />
+      <form>
+        <div class="row d-flex justify-content-center align-items center">
+          <div class="col-lg-6 col-12 pt-5">
+            <div class="form-group pt-4 row">
+              <label for="address" class="col-sm-2 col-form-label"
+                >Address:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="adress"
+                  placeholder="complete address"
+                />
+              </div>
+            </div>
+
+            <div class="form-group pt-3 row">
+              <label for="city" class="col-sm-2 col-form-label">City:</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="city"
+                  placeholder="ex. Paranaque City"
+                />
+              </div>
+            </div>
+
+            <div class="form-group pt-3 row">
+              <label for="province" class="col-sm-2 col-form-label"
+                >Province:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  id="province"
+                  class="form-control"
+                  placeholder="ex. NCR"
+                />
+              </div>
+            </div>
+
+            <div class="form-group pt-3 row">
+              <label for="zip_code" class="col-sm-2 col-form-label"
+                >Zip Code:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="number"
+                  class="form-control"
+                  id="zip_code"
+                  placeholder="Enter Zip Code"
+                />
+              </div>
+            </div>
+
+            <div class="form-group pt-5 row">
+              <label for="enter_password" class="col-sm-2 col-form-label"
+                >Password:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="enter_password"
+                  id="password"
+                  placeholder="Please Enter your Password"
+                />
+                <div
+                  id="passwordHelpBlock"
+                  class="form-text text-secondary"
+                  style="line-height: 20px"
+                >
+                  Passwords must have at least 6-8 characters and contain at
+                  least two of the following: uppercase letters, lowercase
+                  letters, numbers, and symbols.
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group pt-4 row">
+              <label for="enter_confirm_pw" class="col-sm-2 col-form-label"
+                >Confirm Password:</label
+              >
+              <div class="col-sm-10">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="enter_confirm_pw"
+                  id="password"
+                  placeholder="Confirm Password"
+                />
+              </div>
+            </div>
+
+            <!-- Membership -->
+            <fieldset class="form-group pt-1">
+              <div class="row">
+                <label class="pt-4"> Please Select a Membership Type: </label>
+                <div class="col-lg-8">
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="membership"
+                      id="premium_membership"
+                      value="premium"
+                      checked
+                    />
+                    <label class="form-check-label" for="membership">
+                      Premium Membership
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="membership"
+                      id="standard_membership"
+                      value="standard"
+                    />
+                    <label class="form-check-label" for="membership">
+                      Standard Membership
+                    </label>
+                  </div>
+                  <div class="form-check disabled">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="membership"
+                      id="non_member"
+                      value="non_member"
+                    />
+                    <label class="form-check-label" for="membership">
+                      Non-Member
+                    </label>
+                  </div>
+
+                  <div class="form-group pt-4">
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="news_letter"
+                      />
+                      <label class="form-check-label" for="news_letter">
+                        I'd like to receive the latest news, updates, and offers
+                        from Library.
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="text-center">
+                      <a href="library.html"
+                        ><button type="button" class="btn btn-light my-4 mx-3">
+                          Cancel
+                          <img
+                            src="img/vault_cancel.png"
+                            width="30px"
+                          /></button
+                      ></a>
+
+                      <button type="button" class="btn btn-secondary my-4">
+                        Submit <img src="img/vault_approve.png" width="35px" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="col-lg-5 col-12 pt-5">
+            <img
+              src="img/fallout_registration.png"
+              class="img-fluid"
+              alt="Vault Boy with his recruits"
+            />
+          </div>
+        </div>
+
+        <div class="container-fluid" style="background-color: rgb(20, 19, 19)">
+          <footer>
+            <div class="footer-content pt-4 text-light">
+              <h3>Library</h3>
+              <p>
+                Library is a gaming website where you will be able to rent from
+                old games to the latest releases. Here you can freely play any
+                game we have without breaking the bank.
+              </p>
+              <ul class="”socials”">
+                <th>
+                  <a href="https://www.facebok.com"
+                    ><img src="img/facebook_footer.png" width="30px"
+                  /></a>
+                </th>
+                <th>
+                  <a href="https://www.twitter.com"
+                    ><img src="img/twitter_footer.png" width="30px"
+                  /></a>
+                </th>
+                <th>
+                  <a href="https://www.instagram.com"
+                    ><img src="img/instagram_footer.png" width="30px"
+                  /></a>
+                </th>
+              </ul>
+            </div>
+            <div class="footer-bottom text-light">
+              <p>copyright &copy;2023 <a href="”library.html”">Library</a></p>
+            </div>
+          </footer>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
