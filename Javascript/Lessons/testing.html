@@ -4,10 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="loops.js"></script>
     <title>Testing</title>
+    <script>
+      let count = 0;
+
+      function welcome() {
+        alert("Hi! Weather warning.");
+      }
+
+      function goodbye() {
+        alert("Bye bye!");
+      }
+
+      function addCount() {
+        count++;
+        console.log(count);
+      }
+
+      function subCount() {
+        count--;
+        console.log(count);
+      }
+
+      function convertToUSD(php) {
+        let usd_value = php * 0.018;
+        console.log(usd_value);
+      }
+
+      function getAreaTriangle(base, height) {
+        let area = base * height * 0.5;
+        console.log(area);
+      }
+      getAreaTriangle(5, 6);
+      // welcome();
+    </script>
   </head>
   <body>
-    <button onclick="runActivity()">Run</button>
+    <button onclick="welcome()">Welcome</button>
+    <button onclick="goodbye()">Goodbye</button>
+    <button onclick="addCount()">+</button>
+    <button onclick="subCount()">-</button>
+    <button onclick="convertToUSD(530)">Convert to USD</button>
   </body>
 </html>

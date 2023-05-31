@@ -16,6 +16,7 @@ function runActivity() {
 //   }
 //   console.log(draw);
 // }
+// 
 //  DO WHILE LOOP
 // let x = 20;
 // while (x <= 10) {
@@ -30,25 +31,25 @@ function runActivity() {
 //
 //
 // WHILE LOOP
-//   let x = false;
-//   let num;
-//   let choice;
-//   while (x == false) {
-//     num = Number(prompt("Give me a number."));
-//     if (num == 0) {
-//       console.log("Zero is neither even nor odd.");
-//     } else if (num % 2 == 0) {
-//       console.log("That number is even!");
-//     } else {
-//       console.log("That number is odd!");
-//     }
-//     choice = Number(
-//       prompt("Would you like to enter another number? Any Key: Yes, 0: No")
-//     );
-//     if (choice == 1) {
-//       x = true;
-//     }
-//   }
+  // let x = false;
+  // let num;
+  // let choice;
+  // while (x == false) {
+  //   num = Number(prompt("Give me a number."));
+  //   if (num == 0) {
+  //     console.log("Zero is neither even nor odd.");
+  //   } else if (num % 2 == 0) {
+  //     console.log("That number is even!");
+  //   } else {
+  //     console.log("That number is odd!");
+  //   }
+  //   choice = Number(
+  //     prompt("Would you like to enter another number? Any Key: Yes, 0: No")
+  //   );
+  //   if (choice == 1) {
+  //     x = true;
+  //   }
+  }
 //
 //
 // LOOPS
