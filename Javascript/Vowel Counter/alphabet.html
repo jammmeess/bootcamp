@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fun with Aplhabet</title>
+    <script>
+      function countVowelsConsonants() {
+        let choice = prompt("Please enter a word.");
+
+        if (choice) {
+          let vowels = countVowels(choice);
+          let consonants = countConsonants(choice);
+          console.log("Number of Vowels " + vowels);
+          console.log("Number of Consonants " + consonants);
+        } else {
+          console.error("Error: Please input a word.");
+        }
+      }
+
+      function countVowels(word) {
+        let vowelCount = 0;
+        const vowels = ["a", "e", "i", "o", "u"];
+
+        for (let i = 0; i < word.length; i++) {
+          let letter = word[i].toLowerCase();
+          if (vowels.includes(letter)) {
+            vowelCount++;
+          }
+        }
+        return vowelCount;
+      }
+
+      function countConsonants(word) {
+        let consonantCount = 0;
+        let vowels = ["a", "e", "i", "o", "u"];
+
+        for (let i = 0; i < word.length; i++) {
+          let letter = word[i].toLowerCase();
+
+          if (!vowels.includes(letter)) {
+            consonantCount++;
+          }
+        }
+        return consonantCount;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Vowel Counter</h1>
+    <button onclick="countVowelsConsonants()">Enter Vowel</button>
+  </body>
+</html>

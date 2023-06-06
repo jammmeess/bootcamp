@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function solveAreaRectangle() {
+        let length = Number(prompt("What is the length?"));
+        let width = Number(prompt("What is the width"));
+        let area = length * width;
+        return area;
+      }
+      function solveAreaCirlce() {
+        let radius = Number(prompt("What is the radius"));
+        let area = radius ** 2 * Math.PI;
+        return area;
+      }
+      function solveAreaTriangle() {
+        let base = Number(prompt("What is the base"));
+        let height = Number(prompt("What is the height"));
+        let area = base * height * 0.5;
+        return area;
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="console.log(solveAreaRectangle())">
+      Solve for Rectangle
+    </button>
+    <button onclick="console.log(solveAreaCirlce())">Solve for Circle</button>
+    <button onclick="console.log(solveAreaTriangle())">
+      Solve for Triangle
+    </button>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let greeting = false;
+      function change_greeting() {
+        greeting = !greeting;
+        if (greeting) {
+          document.getElementById("welcome").innerHTML = "Hello, Kristoffer!";
+        } else {
+          document.getElementById("welcome").innerHTML = "Greetings!";
+        }
+      }
+
+      let count = 0;
+      function sub_count() {
+        count--;
+        document.getElementById("counter").innerHTML = count;
+      }
+      function add_count() {
+        count++;
+        document.getElementById("counter").innerHTML = count;
+      }
+
+      let story = "";
+
+      function add_story() {
+        story += prompt("Give us the conitnuation of the story.");
+        document.getElementById("story").innerHTML = story;
+      }
+
+      function reset_story() {
+        document.getElementById("story").innerHTML = "";
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="welcome">Greetings!</h1>
+    <button onclick="change_greeting()">Change Greeting</button>
+
+    <h2>Counter</h2>
+    <button onclick="sub_count()">-</button>
+    <span id="counter">0</span>
+    <button onclick="add_count()">+</button>
+
+    <h3>Storytime</h3>
+    <p id="story"></p>
+    <button onclick="add_story()">Add Story</button>
+    <button onclick="reset_story()">Reset Story</button>
+  </body>
+</html>
