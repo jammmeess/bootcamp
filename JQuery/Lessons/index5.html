@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="jquery_forms2.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    <form id="register">
+      <label>Username: </label>
+      <input type="text" name="username" id="username" required /><br />
+      <label>First name: </label>
+      <input type="text" name="fname" id="fname" /><br />
+      <label>Last name: </label>
+      <input type="text" name="lname" id="lname" /><br />
+      <label>Email address: </label>
+      <input type="email" name="email" id="email" /><br />
+      <label>Password: </label>
+      <input type="password" name="pw" id="pw" /><br />
+      <label>Gender: </label>
+      <select name="gender" id="gender">
+        <option value="">Select one</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option></select
+      ><br />
+      <input type="checkbox" name="newsletter" id="newsletter" />I want to
+      receive daily newsletters/offers/marketing material. <br /><input
+        type="submit"
+      />
+    </form>
+    <h1>Registered Users</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <td>Username</td>
+          <td>Full name</td>
+          <td>Gender</td>
+          <td>Newsletter?</td>
+        </tr>
+      </thead>
+      <tbody id="reg_users"></tbody>
+    </table>
+  </body>
+</html>
+ 

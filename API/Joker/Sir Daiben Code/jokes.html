@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function generate_joke() {
+        getText("https://v2.jokeapi.dev/joke/Any?safe-mode");
+
+        async function getText(file) {
+          let myObject = await fetch(file);
+          let myText = await myObject.text();
+          let data = JSON.parse(myText);
+          $(document).ready(function () {
+            let joke = data.joke;
+            if (joke == undefined) {
+              joke = data.setup + " " + data.delivery;
+            }
+            $("#joke").text(joke);
+          });
+        }
+      }
+    </script>
+    <title>Joke Generator</title>
+  </head>
+  <body>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h1>Joke Generator</h1>
+          <h3 id="joke"></h3>
+          <button class="btn btn-primary" onclick="generate_joke()">
+            Generate
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

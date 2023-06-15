@@ -12,7 +12,7 @@ $(document).ready(function () {
     let position = prompt("What is the employees position?");
     let new_entry = "<><td>" + name + "</td><td>" + position + "</td></tr>";
     $("#employee_list").html(curr_table + new_entry);
-  });
+  }); 
 
   $(".required").hide();
   $(".form-text").blur(function () {
@@ -24,7 +24,7 @@ $(document).ready(function () {
   });
 
   $("img.bag-preview").mouseenter(function () {
-    let source = $("#bag-previeww:hover").prop("src");
+    let source = $("#bag-preview:hover").prop("src");
     $("#bag-display").prop("src", source);
   });
 

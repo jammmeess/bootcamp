@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script>
+      $(document).ready(function () {
+        $("#user_login").submit(function (x) {
+          x.preventDefault();
+
+          let user_name = $("#user_name").val();
+          let pw = $("#pw").val();
+          let remember_me = $("#remember_me").is(":checked");
+
+          if (user_name === "user" && pw === "pw123") {
+            if (remember_me) {
+              localStorage.setItem("user_name", user_name);
+              localStorage.setItem("pw", pw);
+              localStorage.setItem("remember_me", remember_me);
+            }
+            window.location.href = "home.html";
+          } else {
+            alert("Incorrect credentials");
+          }
+        });
+
+        if (localStorage.getItem("remember_me") === "true") {
+          let user_name = localStorage.getItem("user_name");
+          let pw = localStorage.getItem("pw");
+          $("#user_name").val(user_name);
+          $("#pw").val(pw);
+          $("#remember_me").prop("checked", true);
+          $("#user_login").submit();
+        }
+      });
+    </script>
+
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1><b>Log In</b></h1>
+      <div class="row align-center my-3">
+        <form id="user_login">
+          <div class="col-lg-6">
+            <label>Username:</label>
+            <input type="text" id="user_name" /><br />
+          </div>
+          <div class="col-lg-6">
+            <label>Password:</label>
+            <input type="password" id="pw" /><br />
+          </div>
+          <div class="col-lg-6">
+            <button id="submit" onclick="go('home.html')">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <input type="checkbox" id="r_me" value="r_me" />
+          Remember Me
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

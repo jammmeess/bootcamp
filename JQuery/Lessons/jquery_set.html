@@ -16,11 +16,16 @@
         color: red;
       }
 
+      .bag-preview {
+        width: 40px;
+        border: 1px solid black;
+      }
+
       .painting-small {
         width: 70px;
       }
       .painting-large {
-        width: 100%;
+        width: 300px;
       }
     </style>
     <title>Document</title>
@@ -29,27 +34,27 @@
     <h1>Bigger Image</h1>
     <img
       src="las_meninas.webp"
-      alt="Las Meninas, painting from france"
+      alt="Las Meninas, painting from France"
       class="painting painting-small"
     />
     <img
-      src="persistence.webp"
-      alt="perisistence of memory by Salvador Dali"
+      src="persistence.jpg"
+      alt="Persistence of Memory by Salvador Dali"
       class="painting painting-small"
     />
     <img
       src="spoliarium.jpg"
-      alt="spoliariium, Philippines"
+      alt="Spoliarium, Philippines"
       class="painting painting-small"
     />
-    <p id="paiting-caption"></p>
+    <p id="painting-caption"></p>
     <h1>Notes</h1>
     <table class="table">
       <tr>
         <td class="note-item">1. Go to store</td>
       </tr>
       <tr>
-        <td class="note-item">2. Buy supplies for Father's birthday</td>
+        <td class="note-item">2. Buy supplies for father's birthday</td>
       </tr>
       <tr>
         <td class="note-item">3. Check up with doctor</td>
@@ -60,37 +65,28 @@
     </table>
     <h1>Image Preview</h1>
     <img
-      src=""
+      src="bag_front.png"
       id="bag-display"
       alt="front of the bag"
       style="width: 150px; display: block"
     />
     <img
-      src=""
-      id="bag-preview"
-      alt="front of the bag"
-      style="width: 150px; display: block"
+      src="bag_front.png"
+      class="bag-preview"
+      alt="front of the bag, small"
     />
-    <img
-      src=""
-      id="bag-display"
-      alt="front of the bag"
-      style="width: 150px; display: block"
-    />
-    <img
-      src=""
-      id="bag-display"
-      alt="front of the bag"
-      style="width: 150px; display: block"
-    />
-
-    <h1><span id="name">Kristoffer</span>'s Profile</h1>
+    <img src="bag_side.png" class="bag-preview" alt="side of the bag, small" />
+    <img src="bag_back.png" class="bag-preview" alt="back of the bag, small" />
+    <h1>
+      <span id="name"><span>Daiben</span></span
+      >'s Profile
+    </h1>
     <button id="change_name" class="btn btn-primary">Change name</button>
     <h1>Registration Form</h1>
     <form>
-      <label>First Name</label>
-      <input class="form-text" type="text" /><span class="required"
-        >Please Fill up this field!</span
+      <label>First name: </label>
+      <input class="form-text" type="text" /><span class="required">
+        Please fill up this field!</span
       ><br />
     </form>
     <h1>Employee Table</h1>
@@ -98,15 +94,17 @@
       <thead>
         <tr>
           <th>Name</th>
-          <th>Position</th>
+          <th>Postion</th>
         </tr>
       </thead>
       <tbody id="employee_list">
-        <td>Xander Ford</td>
-        <td>Makeup Artist</td>
+        <tr>
+          <td>Xander Ford</td>
+          <td>Makeup Stylist</td>
+        </tr>
         <tr>
           <td>Lincoln Velasquez</td>
-          <td>Public Relations</td>
+          <td>Public Relations Officer</td>
         </tr>
         <tr>
           <td>Coco Martin</td>
