@@ -39,18 +39,22 @@ class StudentController extends Controller
         //     "SELECT COUNT(student_id) as total_fem FROM students WHERE gender = 'female'"
         // );
 
-        // $total_fem_student = Student::query()
-        //     ->select(DB::raw("COUNT(student_id) as total_fem"))
-        //     ->where("gender", "=", "female")
-        //     ->get();
+        $total_fem_student = Student::query()
+            ->select(DB::raw("COUNT(student_id) as total_fem"))
+            ->where("gender", "=", "female")
+            ->get();
 
         $student_classes = Student::query()
-            ->select("first_name", "last_name", "class_id")
+            ->select(
+                "students.first_name",
+                "students.last_name",
+                "students_classes.class_id"
+            )
             ->join(
                 "students_classes",
-                "student_classes.student_id",
+                "students.student_id",
                 "=",
-                "students.student_id"
+                "students_classes.student_id"
             )
             ->get();
 
