@@ -5,7 +5,7 @@
     <title>Edit subject</title>
 </head>
 <body>
-    <h1>Subject {{$subject -> subject_id}}</h1>
+    <h1>Edit Subject {{$subject -> subject_id}}</h1>
     <form action="/subjects/{{$subject -> subject_id}}" method="POST">
         @csrf
         @method('PUT')

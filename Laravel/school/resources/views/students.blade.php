@@ -11,8 +11,8 @@
 </head>
 <body>
     <h1>Students</h1>
-    <h2>Total students: {{$total_student[0] -> total}}</h2>
-    <h3>Total female students: {{$total_fem_student[0] -> total_fem}}</h3>
+    <h2>Total students: {{$total_student -> total}}</h2>
+    <h3>Total female students: {{$total_fem_student -> total_fem}}</h3>
     <table class="table">
         <thead>
             <tr>
