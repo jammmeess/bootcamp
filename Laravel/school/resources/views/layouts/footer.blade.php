@@ -1,3 +1,3 @@
 <footer>
-     <p style="background-color: black; color: white">Copyright Kristoffer James Bomediano | kristoffer_bomediano@comapny.com</p>
+     <p style="background-color: black; color: white">Copyright Daiben Angelo Sanchez | daibensanchez@company.com</p>
  </footer>

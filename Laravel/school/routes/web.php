@@ -5,6 +5,7 @@ use App\Http\Controllers\StudentController;
 use App\Http\Controllers\FacultyController;
 use App\Http\Controllers\SubjectController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\OrderController;
 
 ////////////PUBLIC SIDE////////////
 
@@ -26,7 +27,10 @@ Route::get('/logout', [UserController::class, 'logout']);
 Route::get('/profile', [UserController::class, 'showProfile']);
 
 Route::get('/order', [OrderController::class, 'showOrders']);
+Route::get('/order/{id}', [OrderController::class, 'showOrder']);
 Route::get('/cafeteria', [OrderController::class, 'showCafeteria']);
+Route::post('/cafeteria', [OrderController::class, 'takeOrder']);
+Route::post('/cafeteria/checkout', [OrderController::class, 'placeOrder']);
 
 ////////////ADMIN SIDE////////////
 

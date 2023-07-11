@@ -11,83 +11,82 @@ class SubjectController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index() //subjects GET
     {
-        //subjects GET
         $subjects = Subject::query()
-            ->select("subject_id", "name", "department")
+            ->select('subject_id', 'name', 'department')
             ->limit(10)
-            ->orderBy("subject_id", "DESC")
+            ->orderBy('subject_id', 'DESC')
             ->get();
-        return view("subjects", compact("subjects"));
+        return view('subjects', compact('subjects'));
     }
 
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function create() //subjects/create GET
     {
-        //subjects/create GET
-        return view("subjects_create");
+        return view('subjects_create');
     }
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store(Request $request) //subjects POST
     {
-        //subjects POST
-        $subject = new Subject();
-        $subject->name = $request->input("subj_name");
-        $subject->department = $request->input("department");
+        $subject = new Subject;
+        $subject->name = $request->input('subj_name');
+        $subject->department = $request->input('department');
         $subject->save();
 
         return redirect("subjects");
+
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $id) //subjects/{id} GET
     {
-        //subjects/{id} GET
         //SELECT class_id, room, schedule FROM classes WHERE subject_id = 1;
         $subject = Subject::query()
-            ->select("subject_id", "name", "department")
-            ->where("subject_id", "=", $id)
+            ->select('subject_id', 'name', 'department')
+            ->where('subject_id', '=', $id)
             ->get()
             ->first();
         $classes = Classes::query()
-            ->select("class_id", "room", "schedule")
-            ->where("subject_id", "=", $id)
-            ->orderBy("class_id")
+            ->select('class_id', 'room', 'schedule')
+            ->where('subject_id', '=', $id)
+            ->orderBy('class_id')
             ->get();
-        return view("subjects_show", compact("subject", "classes"));
+        return view('subjects_show', compact('subject', 'classes'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(string $id) //subjects/{id} GET
     {
-        //subjects/{id} GET
         $subject = Subject::query()
-            ->select("subject_id", "name", "department")
-            ->where("subject_id", "=", $id)
+            ->select('subject_id', 'name', 'department')->where('subject_id', '=', $id)
             ->get()
             ->first();
-        return view("subjects_edit", compact("subject"));
+        return view('subjects_edit', compact('subject'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $id) //subjects/{id}/edit POST
     {
-        $subject = Subject::where("subject_id", "=", $id)->update([
-            "name" => $request->input("subj_name"),
-            "department" => $request->input("department"),
-        ]);
+        $subject = Subject::where('subject_id', '=', $id)
+            ->update(
+                [
+                    'name' => $request->input('subj_name'),
+                    'department' => $request->input('department')
+                ]
+            );
+
         return redirect('subjects');
     }
 
@@ -103,5 +102,6 @@ class SubjectController extends Controller
 
     public function transferSubject()
     {
+
     }
 }

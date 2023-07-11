@@ -5,6 +5,7 @@
     <title>Login</title>
 </head>
 <body>
+    @include('layouts/navbar')
     @include("layouts/errors")
     <h1>Login</h1>
     <form action="/login" method="POST">
