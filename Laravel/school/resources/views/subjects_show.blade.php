@@ -1,11 +1,13 @@
 <html lang="en">
-     
+
 <head>
     @include("layouts/head")
     <title>Subject Show</title>
 </head>
 
 <body>
+    @include("layouts/navbar-admin")
+    @include("layouts/errors")
     <h1>Subjects Show</h1>
     <ul>
         <li>Subject ID: {{$subject->subject_id}}</li>

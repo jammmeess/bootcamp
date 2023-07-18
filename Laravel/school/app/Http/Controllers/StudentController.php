@@ -21,8 +21,7 @@ class StudentController extends Controller
         $students = Student::query()
             ->select('first_name', 'last_name', 'province')
             ->orderBy('last_name')
-            ->limit(20)
-            ->get();
+            ->paginate(20);
         // $total_student = DB::select("SELECT COUNT(student_id) as total FROM students");
         $total_student = Student::query()
             ->select(DB::raw('COUNT(student_id) as total'))

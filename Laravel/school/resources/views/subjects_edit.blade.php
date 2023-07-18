@@ -1,16 +1,19 @@
 <html lang="en">
-   
+
 <head>
     @include("layouts/head")
     <title>Edit subject</title>
 </head>
+
 <body>
+    @include("layouts/navbar-admin")
+    @include("layouts/errors")
     <h1>Edit Subject {{$subject -> subject_id}}</h1>
     <form action="/subjects/{{$subject -> subject_id}}" method="POST">
         @csrf
         @method('PUT')
         <label>Name: </label>
-        <input type="text" name="subj_name" placeholder="ex. Intro to Programming" value="{{$subject -> name}}"/><br>
+        <input type="text" name="subj_name" placeholder="ex. Intro to Programming" value="{{$subject -> name}}" /><br>
         <label>Department: </label>
         <select name="department">
             <option value="Computer" {{$subject -> department == 'Computer' ? 'selected' : ''}}>Computer</option>
@@ -22,7 +25,8 @@
             <option value="Filipino" {{$subject -> department == 'Filipino' ? 'selected' : ''}}>Filipino</option>
             <option value="English" {{$subject -> department == 'English' ? 'selected' : ''}}>English</option>
         </select>
-        <input type="submit"/>
+        <input type="submit" />
     </form>
-</body>     
+</body>
+
 </html>

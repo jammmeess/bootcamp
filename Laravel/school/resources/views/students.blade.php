@@ -9,7 +9,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Students</title>
 </head>
+
 <body>
+    @include("layouts/navbar-admin")
+    @include("layouts/errors")
     <h1>Students</h1>
     <h2>Total students: {{$total_student -> total}}</h2>
     <h3>Total female students: {{$total_fem_student -> total_fem}}</h3>
@@ -31,6 +34,7 @@
             @endforeach
         </tbody>
     </table>
+    {{$students -> links('pagination::bootstrap-5')}}
 </body>
 
 </html>

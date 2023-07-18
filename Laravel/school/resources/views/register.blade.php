@@ -4,7 +4,9 @@
     @include("layouts/head")
     <title>Register</title>
 </head>
+
 <body>
+    @include("layouts/navbar-admin")
     @include("layouts/errors")
     <h1>Register</h1>
     <form action="/admin/register" method="POST">
@@ -36,5 +38,7 @@
         </select><br>
         <input type="submit">
     </form>
+    <a href="/admin/register/newadmin">Add new admin account</a>
 </body>
-</html>
+
+</html> 

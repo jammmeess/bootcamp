@@ -4,8 +4,11 @@
     @include("layouts/head")
     <title>Faculties</title>
 </head>
+
 <body>
-    <img src="https://external-preview.redd.it/p9_LBMMn22djOrg9XGS2wIcQh2zRyBELz6zhmSUZUSg.jpg?auto=webp&s=6ae3d505c2f1ff1b15122036003fee77b283615e" style="width:120px"/>
+    @include("layouts/navbar-admin")
+    @include("layouts/errors")
+    <img src="https://external-preview.redd.it/p9_LBMMn22djOrg9XGS2wIcQh2zRyBELz6zhmSUZUSg.jpg?auto=webp&s=6ae3d505c2f1ff1b15122036003fee77b283615e" style="width:120px" />
     <h1>Faculties List</h1>
     <table class="table">
         <tr>
@@ -49,4 +52,5 @@
         @endforeach
     </table>
     @include("layouts/footer")
+
 </html>

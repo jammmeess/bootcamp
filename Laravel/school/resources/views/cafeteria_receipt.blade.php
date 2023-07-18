@@ -12,7 +12,7 @@
         @csrf
         <ul>
             @for ($i = 0; $i < count($p); $i++) @if ($sp[$i]> 0)
-                <img src="img/{{$p[$i]->image}}" width="50px">
+                <img src="img/food/{{$p[$i]->image}}" width="50px">
                 <li>{{$p[$i]->name}}: {{$sp[$i]}} (PHP{{$p[$i]->price * $sp[$i]}})</li>
                 @endif
                 <input type="text" name="order_{{$p[$i]->product_id}}" value="{{$sp[$i]}}" hidden />

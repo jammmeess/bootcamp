@@ -15,9 +15,8 @@ class SubjectController extends Controller
     {
         $subjects = Subject::query()
             ->select('subject_id', 'name', 'department')
-            ->limit(10)
             ->orderBy('subject_id', 'DESC')
-            ->get();
+            ->paginate(10);
         return view('subjects', compact('subjects'));
     }
 
@@ -40,7 +39,6 @@ class SubjectController extends Controller
         $subject->save();
 
         return redirect("subjects");
-
     }
 
     /**
@@ -102,6 +100,5 @@ class SubjectController extends Controller
 
     public function transferSubject()
     {
-
     }
 }
