@@ -1,0 +1,158 @@
+body {
+  font-family: "Courier New";
+  margin: 0px;
+}
+
+div.navbar {
+  background-color: rgb(70, 130, 180);
+}
+/* 
+#nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(70, 130, 180);
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+#nav-item {
+  display: inline;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+table.navbar {
+  background-color: rgb(70, 130, 180);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 50px 10px 50px;
+}
+
+#banner {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#ministries-header {
+  text-align: center;
+}
+
+#ministries-heading {
+  color: rgb(70, 130, 180);
+}
+
+#middle-sec {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#gallery {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#middle-heading {
+  font-size: 200%;
+  color: rgb(70, 130, 180);
+}
+
+#pastor {
+  width: 350px;
+  margin-right: 20px;
+}
+
+#middle-content {
+  font-size: 130%;
+}
+
+#middle-link {
+  font-size: 200%;
+  color: rgb(255, 0, 216);
+}
+
+#middle-link:link {
+  color: blue;
+}
+
+#middle-link:visited {
+  color: orange;
+}
+
+#middle-link:hover {
+  color: magenta;
+}
+#middle-link:active {
+  color: lime;
+}
+
+#bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#ministries-table,
+.ministries-table-item {
+  border: 2px black dotted;
+  border-collapse: collapse;
+}
+
+.ministries-table-row:nth-child(odd) {
+  background-color: white;
+}
+
+.ministries-table-row:nth-child(even) {
+  background-color: lightgray;
+}
+
+td.ministries-table-item:hover {
+  background-color: orange;
+}
+
+#other-ministries {
+  text-align: center;
+  list-style-position: inside;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 75%;
+  color: rgb(160, 160, 160);
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+} */
